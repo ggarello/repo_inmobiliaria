@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         contenedor.innerHTML += `
           <div class="publicacion">
-            <img src="${pub.imagen}" alt="${pub.titulo}">
+            <img src="../${pub.imagen}" alt="${pub.titulo}">
 
             <div class="contenido">
               <div class="info">
