@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Laureano González",
+    "puesto": "Asesor Comercial",
+    "imagen": "../images/colaborador 1.png"
+  },
+  {
+    "nombre": "Martín Pérez",
+    "puesto": "Coordinador de Ventas",
+    "imagen": "../images/colaborador 2.png"
+  }
+]

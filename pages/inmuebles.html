@@ -7,66 +7,72 @@
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-  <header>
-    <div>
-      <img src="../images/slimLogo-blanco.png" style="width: 50px; margin-right: 10px;">
-    </div>
-    <nav>
+  <header class="header">
+    <img class = "header__logo" src="../images/Logo-blanco.png">
+    <nav class="header__nav">
       <a href="../index.html">Inicio</a>
       <a href="#">Inmuebles</a>
       <a href="ofrecer.html">Ofrecer</a>
       <a href="desarrollos.html">Desarrollo</a>
       <a href="nosotros.html">Nosotros</a>
     </nav>
-    <div><i><img src="../icons/person.png" style="height: 40px;"></i></div>
+    <i class="header__loginIcon"><img src="../icons/person.png"></i>
+    <button class="header__navButton">&#9776</button>
   </header>
-  <main>
-    <h1>INMUEBLES</h1>
-    <div class="etiquetas-superiores">
-      <button>Label</button>
-      <button>Label</button>
-      <button>Label</button>
-      <button>Label</button>
-      <button>Label</button>
-      <button>Label</button>
-      <button>Label</button>
-      <button>Label</button>
-    </div>
 
+  <!-- Menú -->
+  <div class="navMobile">
+    <!-- Botón hamburguesa -->
+    <button class="navMobile__navButton">&#9776</button>
+    <!-- Contenedor del menú colapsable -->
+    <nav>
+      <a href="../index.html"><div>Inicio</div></a>
+      <a href="inmuebles.html"><div>Inmuebles</div></a>
+      <a href="ofrecer.html"><div>Ofrecer</div></a>
+      <a href="desarrollos.html"><div>Desarrollo</div></a>
+      <a href="nosotros.html"><div>Nosotros</div></a>
+      <a href="#"><div style="padding-right: 5px;">Iniciar sesión</div><img class="nav__loginIcon" src="../icons/person.png"></a>
+    </nav>
+  </div>
+
+  <main class="main-inmuebles">
+    <h1>INMUEBLES</h1>
     <section class="contenedor-inmuebles">
       <aside class="filtros">
-        <button>Label</button>
-        <button>Label</button>
-        <button>Label</button>
-        <button>Label</button>
+        <h2>Filtros</h2>
+        <h3>Operación</h3>
+          <button>Alquila</button>
+          <button>Vende</button>
+        <h3>Frecuencia</h3>
+          <button>Diaria</button>
+          <button>Mensual</button>
       </aside>
-
-      <div class="lista-inmuebles">
-        <!-- Repetir esta tarjeta por cada inmueble -->
-        <div class="tarjeta">
-          <img src="../images/casa 2.jpg" alt="Casa en Santa Fe">
-          <div class="tags">
-            <span class="alquila">Alquila</span>
-            <span class="mensual">Mensual</span>
-          </div>
-          <p>1 ambiente en Santa Fe</p>
-          <p class="precio">$ 250.000,00</p>
-        </div>
-
-        <!-- Puedes replicar esta estructura cambiando etiquetas según el ejemplo -->
-      </div>
+      <!-- Contenedor galería de inmuebles: Se completa con un js alimentado por el json.-->
+      <div class="lista-inmuebles" id="contenedor-inmuebles"></div>
     </section>
   </main>
 
-  <footer>
-    <div class="contacto">
-      <p><span>📞</span> +54 9 342 5102893</p>
-      <p><span>📍</span> Saavedra 1710, Santa Fe, Santa Fe</p>
-    </div>
-    <div class="redes">
-      <p><span><img src="../icons/instagram.png" style="height: 30px;"></span> @garesa</p>
-      <p><span><img src="../icons/facebook.png" style="height: 30px;"></span> @garesa</p>
+  <footer class="footer">
+    <div>
+      <p><strong>CONTACTO</strong></p>
+      <p>📞 +54 9 342 5102893</p>
+      <p>📍 Saavedra 1710, Santa Fe, Santa Fe</p>
+    </div>  
+    
+    <div class="social-icons">
+      <table>
+        <tr>
+          <td><a href="#"><p><img src="../icons/instagram-logo.png">@garesa</p></a></td>
+        </tr>
+        <tr>  
+          <td><a href="#"><p><img src="../icons/facebook-logo.png"">@garesa</p></a></td>
+        </tr>
+      </table>
+
     </div>
   </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/inmuebles.js"></script>
 </body>
 </html>

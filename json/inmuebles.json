@@ -1,0 +1,66 @@
+[
+  {
+    "imagen": "../images/casa 2.jpg",
+    "operacion": "Alquila",
+    "frecuencia": "Mensual",
+    "descripcion": "1 ambiente en Santa Fe",
+    "precio": "250.000,00"
+  },
+  {
+    "imagen": "../images/casa 4.jpg",
+    "operacion": "Vende",
+    "frecuencia": "Diario",
+    "descripcion": "2 ambientes en Rosario",
+    "precio": "300.000,00"
+  },
+  {
+    "imagen": "../images/casa 3.jpg",
+    "operacion": "Alquila",
+    "frecuencia": "Mensual",
+    "descripcion": "3 ambientes en Paraná",
+    "precio": "400.000,00"
+  },
+  {
+    "imagen": "../images/casa 2.jpg",
+    "operacion": "Alquila",
+    "frecuencia": "Mensual",
+    "descripcion": "1 ambiente en Santa Fe",
+    "precio": "250.000,00"
+  },
+  {
+    "imagen": "../images/casa 4.jpg",
+    "operacion": "Vende",
+    "frecuencia": "Diario",
+    "descripcion": "2 ambientes en Rosario",
+    "precio": "300.000,00"
+  },
+  {
+    "imagen": "../images/casa 3.jpg",
+    "operacion": "Alquila",
+    "frecuencia": "Mensual",
+    "descripcion": "3 ambientes en Paraná",
+    "precio": "400.000,00"
+  },
+  {
+    "imagen": "../images/casa 2.jpg",
+    "operacion": "Alquila",
+    "frecuencia": "Mensual",
+    "descripcion": "1 ambiente en Santa Fe",
+    "precio": "250.000,00"
+  },
+  {
+    "imagen": "../images/casa 4.jpg",
+    "operacion": "Vende",
+    "frecuencia": "Diario",
+    "descripcion": "2 ambientes en Rosario",
+    "precio": "300.000,00"
+  },
+  {
+    "imagen": "../images/casa 3.jpg",
+    "operacion": "Alquila",
+    "frecuencia": "Mensual",
+    "descripcion": "3 ambientes en Paraná",
+    "precio": "400.000,00"
+  }
+  
+]

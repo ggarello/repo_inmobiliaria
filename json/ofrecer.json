@@ -1,0 +1,35 @@
+[
+  {
+    "imagen": "../images/casa 2.jpg",
+    "titulo": "1 ambiente en Santa Fe",
+    "direccion": "dirección 123",
+    "localidad": "Santa Fe",
+    "provincia": "Santa Fe",
+    "pais": "Argentina",
+    "prestaciones": ["prestación 1", "prestación 2", "prestación 3"],
+    "tipo": "Venta",
+    "valor": "250.000,00"
+  },
+  {
+    "imagen": "../images/casa 3.jpg",
+    "titulo": "2 ambientes en Rosario",
+    "direccion": "calle Falsa 456",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "pais": "Argentina",
+    "prestaciones": ["aire acondicionado", "cochera", "balcón"],
+    "tipo": "Alquiler",
+    "valor": "300.000,00"
+  },
+  {
+    "imagen": "../images/casa 4.jpg",
+    "titulo": "2 ambientes en Rosario",
+    "direccion": "calle Falsa 456",
+    "localidad": "Rosario",
+    "provincia": "Santa Fe",
+    "pais": "Argentina",
+    "prestaciones": ["aire acondicionado", "cochera", "balcón"],
+    "tipo": "Alquiler",
+    "valor": "300.000,00"
+  }
+]

@@ -7,64 +7,90 @@
   <link rel="stylesheet" href="../css/styles.css"/>
 </head>
 <body>
-  <header>
-    <div>
-      <img src="../images/slimLogo-blanco.png" style="width: 50px; margin-right: 10px;">
-    </div>
-    <nav>
+  <header class="header">
+    <img class = "header__logo" src="../images/Logo-blanco.png">
+    <nav class="header__nav">
       <a href="../index.html">Inicio</a>
       <a href="inmuebles.html">Inmuebles</a>
       <a href="ofrecer.html">Ofrecer</a>
       <a href="desarrollos.html">Desarrollo</a>
       <a href="#">Nosotros</a>
     </nav>
-    <div><i><img src="../icons/person.png" style="height: 40px;"></i></div>
+    <i class="header__loginIcon"><img src="../icons/person.png"></i>
+    <button class="header__navButton">&#9776</button>
   </header>
 
+  <!-- Menú -->
+  <div class="navMobile">
+    <!-- Botón hamburguesa -->
+    <button class="navMobile__navButton">&#9776</button>
+    <!-- Contenedor del menú colapsable -->
+    <nav>
+      <a href="../index.html"><div>Inicio</div></a>
+      <a href="inmuebles.html"><div>Inmuebles</div></a>
+      <a href="ofrecer.html"><div>Ofrecer</div></a>
+      <a href="desarrollos.html"><div>Desarrollo</div></a>
+      <a href="nosotros.html"><div>Nosotros</div></a>
+      <a href="#"><div style="padding-right: 5px;">Iniciar sesión</div><img class="nav__loginIcon" src="../icons/person.png"></a>
+    </nav>
+  </div>
+
   <main class="nosotros">
-    <section class="presentacion-nosotros">
-      <h1>Conocé GARESA inmobiliaria</h1>
-      <p class="subtitulo">Pasión por conectar personas con hogares desde el primer día</p>
-    </section>
+  <section class="presentacion-nosotros">
+    <h1>Conocé GARESA inmobiliaria</h1>
+    <p class="subtitulo">Pasión por conectar personas con hogares desde el primer día</p>
+  </section>
 
-    <section class="historia">
-      <h2>Nuestra historia</h2>
-      <p>
-        <strong>Garesa Inmobiliaria nace como un proyecto familiar</strong>, impulsado por el deseo de brindar un servicio cercano, transparente y humano en el mundo inmobiliario. Desde nuestros inicios, creemos que no se trata solo de propiedades, sino de personas: cada operación representa un paso importante en la vida de alguien, y acompañar ese proceso es una responsabilidad que asumimos con orgullo.
-      </p>
-      <p>
-        Encontramos nuestra mayor satisfacción en <strong>la felicidad de quienes confían en nosotros.</strong> Ya sea ayudando a alguien a encontrar su primer departamento, a vender la casa donde creció o a invertir en un nuevo comienzo, nuestra motivación siempre es la misma: <strong>conectar personas con hogares</strong>, cuidando cada detalle.
-      </p>
-      <p>
-        Con una mirada moderna y digitales que facilitan la experiencia, en <strong>Garesa</strong> combinamos el profesionalismo con el trato cálido que nos define como familia. Nuestro compromiso es claro: estar presentes, escuchar, asesorar con honestidad y construir relaciones que trasciendan una simple transacción.
-      </p>
-    </section>
+  <section class="historia">
+    <h2>Nuestra historia</h2>
+    <p>
+      <strong>Garesa Inmobiliaria nace como un proyecto familiar</strong>, impulsado por el deseo de brindar un servicio cercano, transparente y humano en el mundo inmobiliario. Desde nuestros inicios, creemos que no se trata solo de propiedades, sino de personas: cada operación representa un paso importante en la vida de alguien, y acompañar ese proceso es una responsabilidad que asumimos con orgullo.
+    </p>
+    <p>
+      Encontramos nuestra mayor satisfacción en <strong>la felicidad de quienes confían en nosotros.</strong> Ya sea ayudando a alguien a encontrar su primer departamento, a vender la casa donde creció o a invertir en un nuevo comienzo, nuestra motivación siempre es la misma: <strong>conectar personas con hogares</strong>, cuidando cada detalle.
+    </p>
+    <p>
+      Con una mirada moderna y digitales que facilitan la experiencia, en <strong>Garesa</strong> combinamos el profesionalismo con el trato cálido que nos define como familia. Nuestro compromiso es claro: estar presentes, escuchar, asesorar con honestidad y construir relaciones que trasciendan una simple transacción.
+    </p>
+  </section>
 
-    <section class="diferenciales">
-      <h3>¿Qué nos diferencia?</h3>
-      <ul>
-        <li><span class="etiqueta atencion">✔ Atención personalizada:</span> acompañamos cada operación como si fuera propia.</li>
-        <li><span class="etiqueta transparencia">✔ Transparencia total:</span> información clara, sin letras chicas.</li>
-        <li><span class="etiqueta innovacion">✔ Innovación digital:</span> herramientas ágiles para publicar, buscar y contactar.</li>
-        <li><span class="etiqueta conexion">✔ Conexión humana:</span> priorizamos relaciones duraderas, no transacciones.</li>
-      </ul>
-    </section>
+  <section class="diferenciales">
+    <h3>¿Qué nos diferencia?</h3>
+    <ul>
+      <li><span class="etiqueta atencion">✔ Atención personalizada:</span> acompañamos cada operación como si fuera propia.</li>
+      <li><span class="etiqueta transparencia">✔ Transparencia total:</span> información clara, sin letras chicas.</li>
+      <li><span class="etiqueta innovacion">✔ Innovación digital:</span> herramientas ágiles para publicar, buscar y contactar.</li>
+      <li><span class="etiqueta conexion">✔ Conexión humana:</span> priorizamos relaciones duraderas, no transacciones.</li>
+    </ul>
+  </section>
 
-    <section class="equipo">
-      <h3>Nuestro equipazo:</h3>
-      <!-- Aquí podrías insertar fotos del equipo o tarjetas individuales si querés más adelante -->
-    </section>
-  </main>
+  <section class="equipo">
+    <h3>Nuestro equipazo:</h3>
+    <div id="contenedor-equipo"></div>
+  </section>
+</main>
 
-  <footer>
-    <div class="contacto">
-      <p><span>📞</span> +54 9 342 5102893</p>
-      <p><span>📍</span> Saavedra 1710, Santa Fe, Santa Fe</p>
-    </div>
-    <div class="redes">
-      <p><span><img src="../icons/instagram.png" style="height: 30px;"></span> @garesa</p>
-      <p><span><img src="../icons/facebook.png" style="height: 30px;"></span> @garesa</p>
+
+  <footer class="footer">
+    <div>
+      <p><strong>CONTACTO</strong></p>
+      <p>📞 +54 9 342 5102893</p>
+      <p>📍 Saavedra 1710, Santa Fe, Santa Fe</p>
+    </div>  
+    
+    <div class="social-icons">
+      <table>
+        <tr>
+          <td><a href="#"><p><img src="../icons/instagram-logo.png">@garesa</p></a></td>
+        </tr>
+        <tr>  
+          <td><a href="#"><p><img src="../icons/facebook-logo.png"">@garesa</p></a></td>
+        </tr>
+      </table>
+
     </div>
   </footer>
+  <script src="../js/script.js"></script>
+  <script src="../js/equipo.js"></script>
 </body>
 </html>

@@ -8,57 +8,70 @@
 </head>
 <body>
 
-  <header>
-    <div>
-      <img src="images/slimLogo-blanco.png" class = "logo-header" ">
-    </div>
-    <nav>
+  <header class="header">
+    <img class = "header__logo" src="images/Logo-blanco.png">
+    <nav class="header__nav">
       <a href="#"><div>Inicio</div></a>
       <a href="pages/inmuebles.html"><div>Inmuebles</div></a>
       <a href="pages/ofrecer.html"><div>Ofrecer</div></a>
       <a href="pages/desarrollos.html"><div>Desarrollo</div></a>
       <a href="pages/nosotros.html"><div>Nosotros</div></a>
     </nav>
-    <div><i><img src="icons/person.png" style="height: 40px;"></i></div>
+    <i class="header__loginIcon"><img src="icons/person.png"></i>
+    <!-- Botón hamburguesa -->
+    <button class="header__navButton">&#9776</button>
   </header>
 
+  <div class="navMobile">
+    <!-- Botón hamburguesa -->
+    <button class="navMobile__navButton">&#9776</button>
+    <!-- Contenedor del menú colapsable -->
+    <nav>
+      <a href="#"><div>Inicio</div></a>
+      <a href="pages/inmuebles.html"><div>Inmuebles</div></a>
+      <a href="pages/ofrecer.html"><div>Ofrecer</div></a>
+      <a href="pages/desarrollos.html"><div>Desarrollo</div></a>
+      <a href="pages/nosotros.html"><div>Nosotros</div></a>
+      <a href="#"><div style="padding-right: 5px;">Iniciar sesión</div><img class="nav__loginIcon" src="icons/person.png"></a>
+    </nav>
+  </div>
+
   <main>
-    <section class="main-content">
-      <div class="image-container">
-        <img src="images/indexImage.jpg">
-      </div>
-      <div class="text-container">
-        <p style="color: #6C7A45; font-size: 14px;">BIENVENIDOS</p>
-        <h1>GARESA</h1>
-        <h2>Tu próximo hogar, al instante.</h2>
-        <p>En <strong>Garesa</strong> entendemos que buscar un hogar no es solo una operación inmobiliaria, es una decisión de vida.</p>
-        <p>Por eso, combinamos tecnología, cercanía y experiencia para ayudarte a encontrar el espacio ideal, en el momento justo.</p>
-        <p>Desde departamentos modernos hasta casas familiares, estamos para acompañarte en cada paso.</p>
-        <div class="highlight">Tu próximo hogar te está esperando. Y nosotros, también.</div>
-      </div>
-    </section>
+    <div class="image-container">
+      <img src="images/indexImage.jpg">
+    </div>
+    <div class="text-container">
+      <p style="color: #6C7A45; font-size: 14px;">BIENVENIDOS</p>
+      <h1>GARESA</h1>
+      <h2>Tu próximo hogar, al instante.</h2>
+      <p>En <strong>Garesa</strong> entendemos que buscar un hogar no es solo una operación inmobiliaria, es una decisión de vida.</p>
+      <p>Por eso, combinamos tecnología, cercanía y experiencia para ayudarte a encontrar el espacio ideal, en el momento justo.</p>
+      <p>Desde departamentos modernos hasta casas familiares, estamos para acompañarte en cada paso.</p>
+      <div class="highlight">Tu próximo hogar te está esperando. Y nosotros, también.</div>
+    </div>
   </main>
 
 
-  <footer>
+  <footer class="footer">
     <div>
       <p><strong>CONTACTO</strong></p>
       <p>📞 +54 9 342 5102893</p>
       <p>📍 Saavedra 1710, Santa Fe, Santa Fe</p>
-    </div>
+    </div>  
     
     <div class="social-icons">
       <table>
         <tr>
-          <td><a href="#"><p style="vertical-align: middle;;"></p><img src="icons/instagram.png" style="height: 30px;"> @garesa</p></a></td>
+          <td><a href="#"><p><img src="icons/instagram-logo.png">@garesa</p></a></td>
         </tr>
         <tr>  
-          <td><a href="#"><p style="vertical-align: middle;;"></p><img src="icons/facebook.png" style="height: 20px;"> @garesa</p></a></td>
+          <td><a href="#"><p><img src="icons/facebook-logo.png"">@garesa</p></a></td>
         </tr>
       </table>
 
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
