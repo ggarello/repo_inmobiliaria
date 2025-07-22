@@ -1,0 +1,95 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 60px;
+  width: 100%;
+
+  font-size: 14px;
+  background-color: #A9B388;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+
+  transition: 0.5s ease;
+  z-index: 998;
+}
+
+.header.slim {
+  height: 40px;
+  font-size: 12px;
+  background-color: #A9B388;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  width: auto;
+  height: 75px;
+  transition: transform 0.75s ease;
+}
+.header__logo.slim {
+  transform: scale(0.7);
+}
+
+.header__loginIcon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  transition: transform 0.75s ease;
+}
+.header__loginIcon.slim {
+  transform: scale(0.8);
+  display: flex;
+}
+
+.header__navButton, .navMobile__navButton {
+  display: none;
+  right: 5%;
+  font-size: 14px;
+  color: white;
+  border:none;
+  background-color: none;
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Estilos en modo móvil */
+@media (max-width: 667px) {
+  .header__navButton, .navMobile__navButton {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    padding: 10px 0;
+  }
+
+  .header__navButton {
+    background-color: #A9B388;
+  }
+    
+  .navMobile__navButton {
+    background-color: #6C7A45;
+  }
+
+  .header__loginIcon, .header__loginIcon.slim, .header__nav {
+    display: none; /* Ocultar el icono de login en móvil */
+  }
+}

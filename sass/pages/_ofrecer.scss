@@ -1,0 +1,137 @@
+/* Estilos para la sección de publicaciones */
+
+.main-ofrecer {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: left;
+    padding-top: 5rem;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    padding-left: 1%;
+    flex-wrap: wrap;
+}
+
+.main-ofrecer h1 {
+  width: 100%;
+  text-align: left;
+}
+
+.main-ofrecer__subtitle{
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content:space-between;
+  margin-right: 10%;
+  font: 14px Roboto, Arial ;
+  font-weight: normal;
+}
+
+.main-ofrecer__subtitle .nuevo {
+  background: #a6ac84;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.publicacion {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  padding: 16px;
+  gap: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  align-items: flex-start;
+}
+
+.publicacion img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.publicacion .contenido {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.publicacion .info,
+.publicacion .prestaciones,
+.publicacion .tipo-valor {
+  min-width: 180px;
+  flex: 1;
+}
+
+.publicacion h4 {
+  margin: 0 0 6px;
+}
+
+.publicacion .prestaciones {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.publicacion .acciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  min-width: 160px;
+}
+
+.publicacion .contenido .acciones button {
+  background-color: #ffffff;
+  border: 2px solid #abb68c;
+  color: #2e4739;
+  padding: 10px 0px 10px 0px;
+  font-size: 80%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.publicacion .contenido .acciones button:hover {
+  background-color: #abb68c;
+  color: white;
+  transform: translateX(3px);
+}
+
+
+@media (max-width: 667px) {
+  .publicacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .publicacion .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .publicacion .acciones {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .publicacion .acciones button {
+    font-size: 16px;
+    padding: 8px;
+    justify-content: center;
+  }
+
+  .publicacion .acciones button span {
+    display: none;
+  }
+
+}

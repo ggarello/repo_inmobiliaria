@@ -1,0 +1,58 @@
+/* Sección de FILTROS */
+
+.filtros {
+  width: 15%;
+  padding: 20px;
+  background: #e1e1e1; /* fondo gris claro */
+  border-radius: 7px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filtros h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filtros h3 {
+  font-weight: bold;
+  font-size: 90%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.filtros button {
+  background-color: #ffffff;
+  border: 2px solid #abb68c;
+  color: #2e4739;
+  padding: 10px 0px 10px 0px;
+  font-size: 80%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.filtros button:hover {
+  background-color: #abb68c;
+  color: white;
+  transform: translateX(3px);
+}
+
+.filtros button:active {
+  transform: translateX(1px) scale(0.98);
+}
+
+
+/* Estilos en modo móvil */
+@media (max-width: 667px) {
+  .filtros {
+  display: none;
+  }
+
+}

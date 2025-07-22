@@ -1,0 +1,40 @@
+.navMobile {
+  position: fixed;
+  right: 0px;
+  width: 40%;
+  height: 100%;
+
+  flex-direction: column;
+  background-color: #6C7A45;
+
+  align-items: Left;
+  justify-content: left;
+
+  padding-left: 2%;
+  padding-top: 10px;
+  z-index: 999;
+
+  transition: padding 0.5s ease,  transform 0.3s ease;
+  transform: translateX(100%);
+}
+.navMobile.slim {
+  padding-top: 1px;
+}
+
+.navMobile--open {
+  display: flex;
+  transform: translateX(0);
+}
+
+.nav__loginIcon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+}
+
+.navMobile nav a {
+  display: flex; 
+  height: 30% ;
+  align-items: center; 
+  justify-content: flex-start;
+}
