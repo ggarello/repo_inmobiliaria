@@ -67,7 +67,7 @@
   align-items: center;
   margin: 1rem 0rem;
   position: relative;
-  z-index: 999;
+  z-index:1;
 }
 
 .iconos {
@@ -141,5 +141,27 @@
   .iconos {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 300px) {
+  .intro-desarrollo{
+    position: static;
+    justify-content: center;
+    top:auto;
+    bottom: auto;
+  }
+
+  .mensaje{
+    position: absolute;
+    top:120%;
+    bottom: auto;
+  }
+  .mensaje h1{
+    font-size: 1.1rem;
+  }
+  .mensaje p{
+    font-size: 80%;
   }
 }
